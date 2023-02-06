@@ -1,0 +1,9 @@
+{% extends 'student/base.html' %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+<form method='POST' action='#'>
+{{form|crispy}}
+<button class="btn btn-success" type="submit">Register Student</button>
+</form>
+{% endblock content %}
